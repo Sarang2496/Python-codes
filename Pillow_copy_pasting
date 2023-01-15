@@ -1,0 +1,21 @@
+from PIL import Image
+
+sister = Image.open("3791224194.png")
+
+print(sister.size)
+girl = Image.open("3750453301.png")
+print(girl.size)
+
+
+# pasting the image on other image
+# area = (0,0, 100, 123) # size is importnat otheriwse doesnt work 
+# sister.paste(girl, area)
+
+print(girl.mode)
+
+r= sister.split() # split fiunction 
+
+# merge function 
+r.show()
+
+
